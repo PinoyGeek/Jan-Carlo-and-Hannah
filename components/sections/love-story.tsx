@@ -31,7 +31,7 @@ export function LoveStory() {
         <h1 className={`${cinzel.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-[#4E3B31] mt-8`}>
           Every love story is beautiful
         </h1>
-        <p className={`${cinzel.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-[#8B6F5A] mb-1`}>
+        <p className={`${cinzel.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-[#8B6F5A] mb-4`}>
           but ours is my favorite.
         </p>
       </div>
@@ -89,7 +89,7 @@ export function LoveStory() {
       />
       
       {/* Footer Decoration */}
-      <div className="bg-[#E8DCCB] pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 text-center text-[#4E3B31] z-0 relative px-4">
+      <div className="bg-[#E8DCCB] pt-3 sm:pt-4 pb-16 sm:pb-20 md:pb-24 text-center text-[#4E3B31] z-0 relative px-4">
         <div className="w-12 sm:w-16 h-[1px] bg-[#D6BFA3] mx-auto mb-4 sm:mb-6 opacity-60"></div>
         <Link 
           href="#guest-list"

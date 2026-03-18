@@ -70,7 +70,7 @@ export default function Home() {
               <LoveStory />
               <Countdown />
               <Gallery />
-              <Messages />
+
               <Details />
               {/* <GuestInformation /> */}
               <Entourage />
@@ -78,9 +78,10 @@ export default function Home() {
               {/* <PrincipalSponsors /> */}
               <FAQ />
               <GuestList />
-              <BookOfGuests />
+              {/* <BookOfGuests /> */}
               <Registry />
               <SnapShare />
+              <Messages />
               <Footer />
             </div>
           </div>

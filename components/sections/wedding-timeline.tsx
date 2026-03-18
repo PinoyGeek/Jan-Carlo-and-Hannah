@@ -268,10 +268,10 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
             className={`flex items-start gap-1.5 ${mobile ? "pt-1.5" : "pt-2 md:pt-3"} border-t`}
             style={{ borderColor: `${TIMELINE_TEXT}40` }}
           >
-            <MapPin className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} mt-0.5 flex-shrink-0`} style={{ color: TIMELINE_TEXT }} />
+            {/* <MapPin className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} mt-0.5 flex-shrink-0`} style={{ color: TIMELINE_TEXT }} />
             <p className={`${mobile ? "text-[10px]" : "text-xs md:text-sm"} ${cormorant.className} leading-relaxed opacity-90`} style={{ color: TIMELINE_TEXT }}>
               {event.location}
-            </p>
+            </p> */}
           </div>
         )}
       </div>

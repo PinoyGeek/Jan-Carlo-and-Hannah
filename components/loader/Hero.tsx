@@ -153,7 +153,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               }}
             >
               <Image
-                src="/monogram/newMongoram.webp"
+                src="/monogram/monogram.png"
                 alt="Monogram"
                 fill
                 className="object-contain"

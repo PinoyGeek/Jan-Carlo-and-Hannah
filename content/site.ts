@@ -3,7 +3,7 @@ export const siteConfig = {
     bride: "Hannah Yoshiko Martinez",
     brideNickname: "Hannah",
     groom: "Jan Carlo Sayson",
-    groomNickname: "Jan Carlo",
+    groomNickname: "Carlo",
   },
   wedding: {
     date: "May 2, 2026",

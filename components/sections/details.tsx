@@ -274,7 +274,7 @@ export function Details() {
                   </div>
                   {/* QR Code for Ceremony - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                    <div className="bg-[#F2E4D3] p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#4E3B31]/20 shadow-sm">
+                    {/* <div className="bg-[#F2E4D3] p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#4E3B31]/20 shadow-sm">
                       <QRCodeSVG
                         value={ceremonyMapsLink}
                         size={80}
@@ -283,10 +283,10 @@ export function Details() {
                         fgColor="#4E3B31"
                         bgColor="#F2E4D3"
                       />
-                    </div>
-                    <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#4E3B31]/60 italic text-center max-w-[80px]">
+                    </div> */}
+                    {/* <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#4E3B31]/60 italic text-center max-w-[80px]">
                       Scan for directions
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -399,7 +399,7 @@ export function Details() {
                   </div>
               
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                  <div className="bg-[#F2E4D3] p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#4E3B31]/20 shadow-sm">
+                  {/* <div className="bg-[#F2E4D3] p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#4E3B31]/20 shadow-sm">
                       <QRCodeSVG
                         value={receptionMapsLink}
                         size={80}
@@ -411,7 +411,7 @@ export function Details() {
                     </div>
                     <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#4E3B31]/60 italic text-center max-w-[80px]">
                       Scan for directions
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
