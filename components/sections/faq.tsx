@@ -33,96 +33,149 @@ interface FAQItem {
 }
 
 const faqItems: FAQItem[] = [
+  // {
+  //   question: "When is the wedding?",
+  //   answer:
+  //     `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}). The ceremony will begin promptly at ${siteConfig.ceremony.time}, and we kindly ask guests to arrive by ${siteConfig.ceremony.guestsTime} to help us begin on time. The reception will follow at ${siteConfig.reception.time}.`,
+  // },
+  // {
+  //   question: "What time should I arrive for the ceremony?",
+  //   answer:
+  //     `Our ceremony will begin promptly at ${siteConfig.ceremony.time}. We kindly ask guests to arrive 30–45 minutes earlier to allow enough time for parking, walking to the ceremony area, and finding your seats so we can begin on time.`,
+  // },
+  // {
+  //   question: "Where will the ceremony and reception take place?",
+  //   answer:
+  //     `The ceremony will be held at ${siteConfig.ceremony.location}. The reception will follow at ${siteConfig.reception.location}. You can find detailed directions, addresses, and maps in the Details section above.`,
+  // },
+  // {
+  //   question: "Is there an entourage call time?",
+  //   answer:
+  //     `Yes. Our entourage is requested to arrive by ${siteConfig.ceremony.entourageTime} so we can prepare and settle before the ceremony begins promptly at ${siteConfig.ceremony.time}.`,
+  // },
+  // {
+  //   question: "How do I RSVP?",
+  //   answer:
+  //     `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list, confirm your attendance, and let us know if you'll be bringing companions. We kindly ask for your response on or before ${siteConfig.details.rsvp.deadline} to help us prepare for the big day. For any questions, please contact ${siteConfig.details.rsvp.contact} at ${siteConfig.details.rsvp.phone}.`,
+  // },
+  // {
+  //   question: "Can I bring a guest or a date?",
+  //   answer:
+  //     "If your invitation includes a plus one or lists your guest’s name, you are welcome to bring them. Otherwise, we would love to keep our wedding intimate and reserved for close family and friends, so we kindly ask guests not to bring additional companions.",
+  // },
+  // {
+  //   question: "Are children allowed at the event?",
+  //   answer:
+  //     "As much as we adore your little ones, we have decided to keep our celebration an adult-only event to maintain an intimate and relaxed atmosphere for everyone.\n\nChildren who are part of the entourage are, of course, included. Otherwise, unless your child’s name is specifically listed on your invitation and included in your RSVP, we kindly ask that only adults attend.\n\nWe truly appreciate your understanding and can’t wait to celebrate this special day with you.",
+  // },
+  // {
+  //   question: "Is there a dress code?",
+  //   answer:
+  //     `Wedding attire details are in the Guest Information section above ${siteConfig.dressCode.note}.`,
+  // },
+  // {
+  //   question: "Can I sit anywhere at the reception?",
+  //   answer:
+  //     "Please don't. We kindly ask our guests to follow the seating arrangement prepared for the reception.\n\nA great deal of thought and care went into planning the seating so that everyone will feel comfortable and be seated with friends, family, or guests who share similar connections. Each seat was thoughtfully arranged with every guest in mind. Our reception team will gladly assist you in finding your assigned table.",
+  // },
+  // {
+  //   question: "Is there parking available?",
+  //   answer:
+  //     "Yes, parking is available at both venues. Please follow the parking signs and instructions from our venue coordinators.",
+  // },
+  // {
+  //   question: "Will there be a wedding gift registry?",
+  //   answer:
+  //     "With all that we have, we are truly blessed. Your presence and prayers are what we request most. However, if you desire to give nonetheless, a monetary gift to help us begin our new life together would be humbly appreciated. You can find our gift registry information in the Gift Guide section.",
+  // },
+  // {
+  //   question: "Unplugged Ceremony",
+  //   answer:
+  //     "EYES UP, PHONES DOWN, HEARTS OPEN.\n\nThe greatest gift you can give us during our ceremony is your presence. We respectfully request that guests refrain from taking photos or videos during the ceremony so our official photographers can capture every moment without distraction. We promise to share the beautiful photos with you afterward!\n\nOur professional photographers will be capturing every beautiful memory, and we promise to share the photos with everyone afterwards.",
+  // },
+  // {
+  //   question: "Can I take photos or videos during the reception?",
+  //   answer:
+  //     "Yes! While our I DO’s will be unplugged, our reception will not be. As a couple who loves photos and memories, we would love for you to capture the fun moments throughout the evening. We prepared this celebration wholeheartedly and we want everyone to enjoy it fully.",
+  // },
+  // {
+  //   question: "What should I do if I can’t make it?",
+  //   answer:
+  //     "Your presence will truly be missed, but we completely understand.\n\nPlease kindly let us know through RSVP as soon as possible so we may adjust arrangements accordingly.",
+  // },
+  // {
+  //   question: "I said “No” to RSVP but my plans changed. Can I still attend?",
+  //   answer:
+  //     "Please check with us first before making arrangements. Due to limited seating and a carefully planned guest list, attendance cannot be guaranteed without prior confirmation.",
+  // },
+  // {
+  //   question: "When is the appropriate time to leave?",
+  //   answer:
+  //     "It took us some time to plan for a heartfelt wedding that everyone would hopefully enjoy. We humbly request that you celebrate with us until the program ends. Please don't eat and run! Let's laugh, take pictures, sing, and have fun!",
+  // },
+  // {
+  //   question: "What if I have dietary restrictions or allergies?",
+  //   answer:
+  //     "Please let us know about any dietary restrictions or allergies when you RSVP. We want to ensure everyone can enjoy the celebration comfortably.",
+  // },
+  // {
+  //   question: "How can I help the couple have a great time during their wedding?",
+  //   answer:
+  //     "• Pray with us for favorable weather and the continuous blessings of our Lord as we enter this new chapter of our lives as husband and wife.\n\n• RSVP as soon as your schedule is cleared.\n\n• Dress appropriately and follow our wedding motif.\n\n• Be on time.\n\n• Follow the seating arrangement in the reception.\n\n• Stay until the end of the program.\n\n• Join the activities and enjoy!",
+  // },
   {
-    question: "When is the wedding?",
-    answer:
-      `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}). The ceremony will begin promptly at ${siteConfig.ceremony.time}, and we kindly ask guests to arrive by ${siteConfig.ceremony.guestsTime} to help us begin on time. The reception will follow at ${siteConfig.reception.time}.`,
+    question: `WHAT TIME SHOULD I ARRIVE FOR THE CEREMONY?`,
+    answer: `Our ceremony will begin promptly at 4:00 PM. We kindly ask guests to arrive 30-45 minutes earlier before the ceremony starts. This will give you enough time to find parking, settle in, and be part of our special moment from the very beginning.`,
   },
   {
-    question: "What time should I arrive for the ceremony?",
-    answer:
-      `Our ceremony will begin promptly at ${siteConfig.ceremony.time}. We kindly ask guests to arrive 30–45 minutes earlier to allow enough time for parking, walking to the ceremony area, and finding your seats so we can begin on time.`,
+    question: `HOW DO I RSVP?`,
+    answer: `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list and confirm your attendance. We kindly ask for your response on or before April 15, 2026 to help us prepare for the big day.`,
   },
   {
-    question: "Where will the ceremony and reception take place?",
-    answer:
-      `The ceremony will be held at ${siteConfig.ceremony.location}. The reception will follow at ${siteConfig.reception.location}. You can find detailed directions, addresses, and maps in the Details section above.`,
+    question: `CAN I BRING A PLUS ONE OR MY KIDS?`,
+    answer: `As much as we’d love to accommodate everyone, but due to limited space, We kindly ask that only the guests listed on the invitation join us. Children who are part of the entourage are, of course, included. Otherwise, unless your child’s name is specifically listed on your invitation and included in your RSVP, we kindly ask that only adults attend.`,
   },
   {
-    question: "Is there an entourage call time?",
-    answer:
-      `Yes. Our entourage is requested to arrive by ${siteConfig.ceremony.entourageTime} so we can prepare and settle before the ceremony begins promptly at ${siteConfig.ceremony.time}.`,
+    question: `CAN I TAKE PHOTOS AND VIDEOS DURING CEREMONY?`,
+    answer: `
+      EYES UP, PHONES DOWN, HEARTS OPEN. \n\n
+      The greatest gift you can give us during our ceremony is your presence. We respectfully request that guests refrain from taking photos or videos during the ceremony so our official photographers can capture every moment without distraction. We promise to share the beautiful photos with you afterward!
+      Our professional photographers will be capturing every beautiful memory, and we promise to share the photos with everyone afterwards.
+      \n\n
+      
+Our professional photographers will be capturing every beautiful memory, and we promise to share the photos with everyone afterwards.
+
+    `,
   },
   {
-    question: "How do I RSVP?",
-    answer:
-      `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list, confirm your attendance, and let us know if you'll be bringing companions. We kindly ask for your response on or before ${siteConfig.details.rsvp.deadline} to help us prepare for the big day. For any questions, please contact ${siteConfig.details.rsvp.contact} at ${siteConfig.details.rsvp.phone}.`,
+    question: `AM I ALLOWED TO TAKE PICTURES AND VIDEOS DURING THE RECEPTION?`,
+    answer: `Yes! While our I DO’s will be unplugged, our reception will not be. As a couple who loves photos and memories, we would love for you to capture the fun moments throughout the evening. We prepared this celebration wholeheartedly and we want everyone to enjoy it fully.`,
   },
   {
-    question: "Can I bring a guest or a date?",
-    answer:
-      "If your invitation includes a plus one or lists your guest’s name, you are welcome to bring them. Otherwise, we would love to keep our wedding intimate and reserved for close family and friends, so we kindly ask guests not to bring additional companions.",
+    question: `CAN I SIT ANYWHERE AT THE RECEPTION?`,
+    answer: `Please don't. We kindly ask our guests to follow the seating arrangement prepared for the reception. A great deal of thought and care went into planning the seating so that everyone will feel comfortable and be seated with friends, family, or guests who share similar connections. Each seat was thoughtfully arranged with every guest in mind. Our reception team will gladly assist you in finding your assigned table.`,
   },
   {
-    question: "Are children allowed at the event?",
-    answer:
-      "As much as we adore your little ones, we have decided to keep our celebration an adult-only event to maintain an intimate and relaxed atmosphere for everyone.\n\nChildren who are part of the entourage are, of course, included. Otherwise, unless your child’s name is specifically listed on your invitation and included in your RSVP, we kindly ask that only adults attend.\n\nWe truly appreciate your understanding and can’t wait to celebrate this special day with you.",
+    question: `WILL THERE BE A GIFT REGISTRY?`,
+    answer: `We have chosen not to have a wedding gift registry. However, if you feel inclined to give, monetary gifts for our future would be sincerely appreciated.`,
   },
   {
-    question: "Is there a dress code?",
-    answer:
-      `Wedding attire details are in the Guest Information section above ${siteConfig.dressCode.note}.`,
+    question: `WHEN IS THE APPROPRIATE TIME TO LEAVE?`,
+    answer: `This event took us months to plan, and we want to celebrate it with the people that are very dear to our hearts. We would appreciate it if you can celebrate with us until the end of the program!`,
   },
   {
-    question: "Can I sit anywhere at the reception?",
-    answer:
-      "Please don't. We kindly ask our guests to follow the seating arrangement prepared for the reception.\n\nA great deal of thought and care went into planning the seating so that everyone will feel comfortable and be seated with friends, family, or guests who share similar connections. Each seat was thoughtfully arranged with every guest in mind. Our reception team will gladly assist you in finding your assigned table.",
+    question: `IS THERE PARKING AVAILABLE?`,
+    answer: `Yes, parking is available. The venue has ample parking space for everyone. Please just follow the parking signs and the instructions provided by our venue coordinators.`,
   },
   {
-    question: "Is there parking available?",
-    answer:
-      "Yes, parking is available at both venues. Please follow the parking signs and instructions from our venue coordinators.",
+    question: `WHAT SHOULD I DO IF I CAN’T MAKE IT?`,
+    answer: `Your presence will truly be missed, but we completely understand. Please kindly let us know through RSVP as soon as possible so we may adjust arrangements accordingly. \n\n
+- I said "NO" to the RSVP but I had a change of plans-I can attend now! What should I do?  \n
+Please check with us first as we have a strict guest list. If seats become available, we will let you know as soon as possible. Please do not attend unannounced, as we may not have any available seats for you. 
+`,
   },
-  {
-    question: "Will there be a wedding gift registry?",
-    answer:
-      "With all that we have, we are truly blessed. Your presence and prayers are what we request most. However, if you desire to give nonetheless, a monetary gift to help us begin our new life together would be humbly appreciated. You can find our gift registry information in the Gift Guide section.",
-  },
-  {
-    question: "Unplugged Ceremony",
-    answer:
-      "EYES UP, PHONES DOWN, HEARTS OPEN.\n\nThe greatest gift you can give us during our ceremony is your presence. We respectfully request that guests refrain from taking photos or videos during the ceremony so our official photographers can capture every moment without distraction. We promise to share the beautiful photos with you afterward!\n\nOur professional photographers will be capturing every beautiful memory, and we promise to share the photos with everyone afterwards.",
-  },
-  {
-    question: "Can I take photos or videos during the reception?",
-    answer:
-      "Yes! While our I DO’s will be unplugged, our reception will not be. As a couple who loves photos and memories, we would love for you to capture the fun moments throughout the evening. We prepared this celebration wholeheartedly and we want everyone to enjoy it fully.",
-  },
-  {
-    question: "What should I do if I can’t make it?",
-    answer:
-      "Your presence will truly be missed, but we completely understand.\n\nPlease kindly let us know through RSVP as soon as possible so we may adjust arrangements accordingly.",
-  },
-  {
-    question: "I said “No” to RSVP but my plans changed. Can I still attend?",
-    answer:
-      "Please check with us first before making arrangements. Due to limited seating and a carefully planned guest list, attendance cannot be guaranteed without prior confirmation.",
-  },
-  {
-    question: "When is the appropriate time to leave?",
-    answer:
-      "It took us some time to plan for a heartfelt wedding that everyone would hopefully enjoy. We humbly request that you celebrate with us until the program ends. Please don't eat and run! Let's laugh, take pictures, sing, and have fun!",
-  },
-  {
-    question: "What if I have dietary restrictions or allergies?",
-    answer:
-      "Please let us know about any dietary restrictions or allergies when you RSVP. We want to ensure everyone can enjoy the celebration comfortably.",
-  },
-  {
-    question: "How can I help the couple have a great time during their wedding?",
-    answer:
-      "• Pray with us for favorable weather and the continuous blessings of our Lord as we enter this new chapter of our lives as husband and wife.\n\n• RSVP as soon as your schedule is cleared.\n\n• Dress appropriately and follow our wedding motif.\n\n• Be on time.\n\n• Follow the seating arrangement in the reception.\n\n• Stay until the end of the program.\n\n• Join the activities and enjoy!",
-  },
+
+
 ]
 
 export function FAQ() {

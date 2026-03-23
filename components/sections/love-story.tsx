@@ -46,7 +46,13 @@ export function LoveStory() {
         text={
           <>
             <p className="mb-4">
-            On January 14, 2024, after years of growing together through life’s challenges and quiet joys, Jesanine and Joseph got engaged. In that moment, they chose each other — not just for now, but for always. Surrounded by the stillness that had once brought them together, they decided to tie the knot, ready to face the future hand in hand, with a love that had already proven strong in the silence.
+            In July 2018, a simple message became the quiet beginning of a story only God could write. What started as a casual conversation on Messenger slowly grew into something more meaningful, and Carlo and Hannah soon realized their paths had been crossing long before they knew. From the beginning, Carlo noticed Hannah's quiet kindness and hardworking spirit. She was always busy, always focused, and always caring toward those around her. Hannah, on the other hand, smiles when she thinks back to her first impression of Carlo, there was simply something about him that quietly stood out and lingered in her heart.
+<br />
+<br />
+What began as a simple connection soon grew into friendship, and eventually, into love. It was never built on grand gestures, but on the little things, corny jokes, shared music, long conversations, and quiet moments together. In those ordinary days, they found something rare: a love that felt easy, steady, and real. 
+<br />
+<br />
+
             </p>
            
           </>
@@ -76,13 +82,10 @@ export function LoveStory() {
         text={
           <>
             <p>
-              Our journey wasn&apos;t rushed, but perfectly timed. We believe that God brought us together in His own way and season.
+            Our journey was not without challenges, but through every season, we learned that love is not about perfection. It is about grace, patience, and choosing one another again and again. Looking back, we now see that the simplest moments often held the deepest meaning. What once felt like chance was, all along, God’s tender hand gently leading our hearts to each other in His perfect time.
             </p>
             <p className="mt-4">
-              With hearts full of gratitude, we step into this new chapter hand in hand, trusting His plan and celebrating a love rooted in faith, patience, and grace.
-            </p>
-            <p className="mt-4">
-              Today, we choose each other- again and again- and we can&apos;t wait to celebrate this new chapter with the people we love most.
+            Today, we choose each other, again and again, and we can't wait to celebrate this new chapter with the people we love most.
             </p>
           </>
         }

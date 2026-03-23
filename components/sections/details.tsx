@@ -1,17 +1,11 @@
 "use client"
 
 import { Section } from "@/components/section"
-import { Shirt, Copy, Check, Navigation, MapPin } from "lucide-react"
+import { Copy, Check, Navigation, MapPin } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { QRCodeSVG } from "qrcode.react"
 import { siteConfig } from "@/content/site"
-import { Cinzel, Cormorant_Garamond, Montserrat } from "next/font/google"
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-})
+import { Cinzel, Cormorant_Garamond } from "next/font/google"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -32,6 +26,17 @@ const palette = {
   champagneGold: "#D6BFA3",   // champagne
   champagneLight: "#F2E4D3",  // light champagne / paper
 } as const
+
+// Wedding guest palette swatches (matches the “attire / thank you” reference style)
+const guestPalette = [
+  "#EBCBBB", // soft beige
+  "#CFAE9D", // warm sand
+  "#BB9D8E", // muted taupe
+  "#AB8875", // mocha taupe
+  "#D9CDC0", // light greige
+  "#D3B195", // warm beige
+  "#E9D1BC", // light champagne
+] as const
 
 export function Details() {
   const [copiedItems, setCopiedItems] = useState<Set<string>>(new Set())
@@ -447,7 +452,7 @@ export function Details() {
       {/* Attire Information */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+        {/* <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
             <div className="h-px w-10 sm:w-14 md:w-20 bg-[#D6BFA3]/60" />
             <Shirt className="w-5 h-5 sm:w-6 sm:h-6 text-[#D6BFA3]" />
@@ -464,12 +469,74 @@ export function Details() {
           >
             Please dress according to the guidelines below.
           </p>
+        </div> */}
+
+        {/* Wedding Guest Palette (similar to reference screenshot) */}
+        <div className="relative mb-10 sm:mb-12 md:mb-16 px-2 sm:px-0">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-[#D6BFA3]/35 bg-[#F2E4D3]/35 backdrop-blur-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)] px-4 sm:px-6 py-8 sm:py-10">
+            <div className="flex items-center justify-center gap-4 mb-3 sm:mb-4">
+              <div className="h-px w-20 sm:w-28 bg-[#D6BFA3]/70" />
+              <p
+                className={`${cinzel.className} text-[0.7rem] sm:text-xs uppercase tracking-[0.22em] text-[#4E3B31]`}
+              >
+                Wedding Guest Palette
+              </p>
+              <div className="h-px w-20 sm:w-28 bg-[#D6BFA3]/70" />
+            </div>
+
+            <div
+              className={`${cormorant.className} text-4xl sm:text-5xl md:text-6xl font-normal italic text-[#4E3B31] text-center`}
+              style={{ textShadow: "0 2px 10px rgba(78,59,49,0.18)" }}
+            >
+              attire
+            </div>
+
+            <p
+              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.22em] text-[#4E3B31] text-center mt-4 mb-6`}
+            >
+              WE KINDLY INVITE OUR GUESTS TO WEAR
+              <br />
+              THESE SOFT NEUTRAL TONES FOR OUR SPECIAL DAY
+            </p>
+
+            <div className="flex justify-center gap-2.5 sm:gap-3 md:gap-4 flex-wrap mb-10 sm:mb-12 px-2">
+              {guestPalette.map((color) => (
+                <div
+                  key={color}
+                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full
+                    shadow-[0_10px_18px_rgba(0,0,0,0.12)]
+                    border border-white/70 ring-2 ring-white/30"
+                  style={{ backgroundColor: color }}
+                  title={color}
+                />
+              ))}
+            </div>
+
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-24 sm:w-32 bg-[#D6BFA3]/60" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#D6BFA3]" />
+              <div className="h-px w-24 sm:w-32 bg-[#D6BFA3]/60" />
+            </div>
+
+            <div
+              className={`${cormorant.className} text-3xl sm:text-4xl md:text-5xl font-normal italic text-[#4E3B31] text-center`}
+              style={{ textShadow: "0 2px 10px rgba(78,59,49,0.16)" }}
+            >
+              thank you
+            </div>
+
+            <p
+              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.22em] text-[#4E3B31] text-center mt-4`}
+            >
+              ROMANTIC NEUTRALS • WARM TAUPES • SOFT CHAMPAGNE TONES
+            </p>
+          </div>
         </div>
 
         {/* Attire Cards */}
         <div className="space-y-5 sm:space-y-6 md:space-y-8">
-          {/* Principal Sponsor Attire */}
-          <div className="relative group">
+       
+          {/* <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-br from-[#D6BFA3]/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
             
             <div className="relative bg-[#F2E4D3] backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-9 border border-[#D6BFA3] shadow-[0_16px_40px_rgba(0,0,0,0.18)] hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-[#4E3B31]/70 transition-all duration-300">
@@ -479,12 +546,12 @@ export function Details() {
                 Guest Attire
               </h4>
 
-              {/* Copy: follow color palette */}
+           
               <p className="text-center text-xs sm:text-sm md:text-base lg:text-lg ${cinzel.className} text-[#4E3B31]/90 font-light leading-relaxed mb-4 sm:mb-5 md:mb-6 max-w-xl mx-auto px-3">
                 Please follow the color palette below for your outfit.
               </p>
 
-              {/* Principal sponsor attire image */}
+           
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-[#C44569]/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
                   src="/Details/628182019_1717633126313475_8834141512576372627_n-removebg-preview.png"
@@ -495,19 +562,21 @@ export function Details() {
                 />
               </div>
 
-              {/* Color palette for principal sponsors */}
+          
               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
-                {["#4E3B31", "#8B6F5A", "#D6BFA3", "#E8DCCB", "#F2E4D3"].map((color) => (
+                {guestPalette.map((color) => (
                   <div
                     key={color}
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-[#D6BFA3]/40 hover:scale-110 transition-transform duration-300"
+                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full
+                      shadow-[0_10px_18px_rgba(0,0,0,0.12)]
+                      border border-white/70 ring-2 ring-[#D6BFA3]/40 hover:scale-110 transition-transform duration-300"
                     style={{ backgroundColor: color }}
                     title={color}
                   />
                 ))}
               </div>
               
-              {/* Sponsors Dress Code Text */}
+          
               <div className="text-center pt-3 sm:pt-4 border-t border-[#D6BFA3]/70 px-3 sm:px-4">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#4E3B31] leading-relaxed mb-2">
                   <span className="font-semibold">Dress code:</span> Semi‑formal.
@@ -520,7 +589,7 @@ export function Details() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Guest Attire */}
           {/* <div className="relative group">

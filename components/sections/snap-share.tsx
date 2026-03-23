@@ -291,7 +291,7 @@ export function SnapShare() {
 
           <motion.div className="space-y-3 sm:space-y-5 lg:space-y-6 h-full flex flex-col lg:order-2" variants={fadeInUp}>
             <div className="flex-1">
-              <div className="bg-[#F2E4D3]/95 rounded-xl sm:rounded-[22px] p-3 sm:p-5 md:p-8 shadow-[0_18px_45px_rgba(0,0,0,0.25)] text-center h-full flex flex-col border border-[#D6BFA3]">
+              {/* <div className="bg-[#F2E4D3]/95 rounded-xl sm:rounded-[22px] p-3 sm:p-5 md:p-8 shadow-[0_18px_45px_rgba(0,0,0,0.25)] text-center h-full flex flex-col border border-[#D6BFA3]">
                 <h4
                   className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-[#4E3B31] mb-2 sm:mb-3 uppercase`}
                   style={{ letterSpacing: "0.08em" }}
@@ -334,10 +334,10 @@ export function SnapShare() {
                 >
                   Scan with any camera app to open the full invitation and schedule.
                 </p>
-              </div>
+              </div> */}
             </div>
 
-            <div className="bg-[#F2E4D3]/95 rounded-lg sm:rounded-[20px] p-3 sm:p-5 md:p-7 shadow-[0_18px_45px_rgba(0,0,0,0.25)] border border-[#D6BFA3]">
+            {/* <div className="bg-[#F2E4D3]/95 rounded-lg sm:rounded-[20px] p-3 sm:p-5 md:p-7 shadow-[0_18px_45px_rgba(0,0,0,0.25)] border border-[#D6BFA3]">
               <h5
                 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-[#4E3B31] mb-2 sm:mb-3 text-center uppercase`}
                 style={{ letterSpacing: "0.08em" }}
@@ -415,9 +415,9 @@ export function SnapShare() {
                   </>
                 )}
               </button>
-            </div>
+            </div> */}
 
-            <div className="bg-[#F2E4D3]/95 rounded-lg sm:rounded-[20px] p-3 sm:p-5 md:p-7 shadow-[0_18px_45px_rgba(0,0,0,0.25)] border border-[#D6BFA3]">
+            {/* <div className="bg-[#F2E4D3]/95 rounded-lg sm:rounded-[20px] p-3 sm:p-5 md:p-7 shadow-[0_18px_45px_rgba(0,0,0,0.25)] border border-[#D6BFA3]">
               <h5
                 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-[#4E3B31] mb-2 sm:mb-3 text-center uppercase`}
                 style={{ letterSpacing: "0.08em" }}
@@ -479,7 +479,7 @@ export function SnapShare() {
                   </span>
                 </button>
               </div>
-            </div>
+            </div> */}
 
             {driveLink && (
               <div>

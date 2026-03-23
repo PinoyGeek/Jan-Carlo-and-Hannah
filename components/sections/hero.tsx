@@ -130,7 +130,7 @@ export function Hero() {
             className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.28em] sm:tracking-[0.32em] font-light`}
             style={{ color: palette.mediumBrown }}
           >
-            Together with their families, they request the pleasure of your company
+            WITH GRATEFUL HEARTS, TOGETHER WITH OUR FAMILIES, WE WARMLY INVITE YOU  TO CELEBRATE WITH US AS WE SAY “I DO”
           </p>
 
           <div className="flex items-center justify-center gap-3 sm:gap-4 my-6 sm:my-8" aria-hidden>
@@ -142,7 +142,7 @@ export function Hero() {
               className="text-[0.6rem] sm:text-[0.7rem] tracking-[0.38em] uppercase"
               style={{ color: palette.sageGold }}
             >
-              at the celebration of their marriage
+              at the celebration of a love so dearly cherished
             </span>
             <span
               className="h-px w-12 sm:w-16 rounded-full"

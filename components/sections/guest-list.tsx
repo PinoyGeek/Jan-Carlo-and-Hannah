@@ -408,7 +408,7 @@ export function GuestList() {
           className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-white mb-2`}
           style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
         >
-          Confirm Your Attendance
+          CONFIRM YOUR ATTENDANCE (RSVP)
         </p>
         
         <h2

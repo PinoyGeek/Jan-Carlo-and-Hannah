@@ -124,13 +124,18 @@ export function Welcome() {
                 className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
                 style={{ color: palette.deepBrown, opacity: 0.9 }}
               >
-                &quot;In God&apos;s perfect time, love grows and all things become beautiful.&quot;
+                By God’s grace, our two paths became one, and our hearts found a home in each other. With grateful hearts, we are so happy to share this beautiful season of our lives with you
               </p>
               <p
                 className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
                 style={{ color: palette.deepBrown, opacity: 0.9 }}
               >
-                &quot;Love bears all things, hopes all things, endures all things.&quot;
+Having you here means so much to us. Your presence in our lives is a gift, and it makes our joy even more meaningful to celebrate this day with the people we love most.
+              </p >
+              <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
+                style={{ color: palette.deepBrown, opacity: 0.9 }}
+              >
+We created this space to share the details of our wedding day and the moments leading up to it. Thank you for being part of our story and for celebrating the beginning of our forever.
               </p>
             </div>
 
@@ -156,6 +161,12 @@ export function Welcome() {
             <p>
               Feel free to browse through important information and other helpful reminders — everything you
               need to join us in this celebration!
+            </p>
+
+            <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
+              style={{ color: palette.deepBrown, opacity: 0.9 }}
+            >
+              God’s perfect timing makes even the simplest love story a beautiful testimony of His grace.
             </p>
           </div>
           </div>
