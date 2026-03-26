@@ -117,6 +117,18 @@ export function Welcome() {
               Welcome to our wedding website
             </h2>
 
+            {/* bible verses */}
+            <div className="space-y-0.5 sm:space-y-1">
+              <p
+                className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
+                style={{ color: palette.deepBrown, opacity: 0.9 }}
+              >
+                "God's perfect timing makes even the simplest love story a beautiful testimony of His grace."
+              </p>
+              
+            </div>
+            
+
 
             {/* Verse */}
             <div className="space-y-0.5 sm:space-y-1">
@@ -140,15 +152,15 @@ We created this space to share the details of our wedding day and the moments le
             </div>
 
             {/* Divider */}
-            <div className="flex items-center justify-center gap-2 pt-1">
+            {/* <div className="flex items-center justify-center gap-2 pt-1">
               <span className="h-px w-10 sm:w-16 md:w-20 bg-[#9B6A41]/40" />
               <span className="w-1.5 h-1.5 rounded-full bg-[#9B6A41]" />
               <span className="h-px w-10 sm:w-16 md:w-20 bg-[#9B6A41]/40" />
-            </div>
+            </div> */}
           </div>
 
           {/* Body text */}
-          <div
+          {/* <div
             className={`${cormorant.className} text-[0.75rem] sm:text-[0.85rem] md:text-sm lg:text-base leading-relaxed sm:leading-6 md:leading-7 space-y-2.5 sm:space-y-3 md:space-y-4`}
             style={{ color: palette.deepBrown }}
           >
@@ -168,7 +180,7 @@ We created this space to share the details of our wedding day and the moments le
             >
               God’s perfect timing makes even the simplest love story a beautiful testimony of His grace.
             </p>
-          </div>
+          </div> */}
           </div>
         </div>
       </div>

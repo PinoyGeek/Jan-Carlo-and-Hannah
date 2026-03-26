@@ -127,8 +127,8 @@ export function Hero() {
         >
           {/* Invitation line — refined copy */}
           <p
-            className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.28em] sm:tracking-[0.32em] font-light`}
-            style={{ color: palette.mediumBrown }}
+            className={`${cinzel.className} text-sm sm:text-base uppercase tracking-[0.28em] sm:tracking-[0.32em] font-light`}
+            style={{ color: palette.deepBrown }}
           >
             WITH GRATEFUL HEARTS, TOGETHER WITH OUR FAMILIES, WE WARMLY INVITE YOU  TO CELEBRATE WITH US AS WE SAY “I DO”
           </p>
@@ -139,8 +139,8 @@ export function Hero() {
               style={{ backgroundColor: palette.sageGold }}
             />
             <span
-              className="text-[0.6rem] sm:text-[0.7rem] tracking-[0.38em] uppercase"
-              style={{ color: palette.sageGold }}
+              className="text-[0.7rem] sm:text-[0.8rem] tracking-[0.38em] uppercase"
+              style={{ color: palette.mediumBrown }}
             >
               at the celebration of a love so dearly cherished
             </span>
@@ -180,11 +180,11 @@ export function Hero() {
           </h1>
 
           {/* Venue & occasion */}
-          <div className="mt-8 sm:mt-10 space-y-2 sm:space-y-2.5" style={{ color: palette.mediumBrown }}>
-            <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.18em] leading-relaxed max-w-sm mx-auto`}>
+          <div className="mt-8 sm:mt-10 space-y-2 sm:space-y-2.5" style={{ color: palette.deepBrown }}>
+            <p className={`${cinzel.className} text-sm sm:text-base uppercase tracking-[0.18em] leading-relaxed max-w-sm mx-auto`}>
               {ceremonyVenue}
             </p>
-            <p className={`${cinzel.className} text-[0.7rem] sm:text-xs uppercase tracking-[0.22em]`}>
+            <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.22em]`}>
               Ceremony &amp; Reception
             </p>
           </div>
@@ -194,10 +194,10 @@ export function Hero() {
             className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t"
             style={{ borderColor: `${palette.sageGold}50`, color: palette.deepBrown }}
           >
-            <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.2em] font-medium`}>
+            <p className={`${cinzel.className} text-sm sm:text-base uppercase tracking-[0.2em] font-medium`}>
               {ceremonyDay} · {ceremonyTime}
             </p>
-            <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.24em] mt-1.5`} style={{ color: palette.mediumBrown }}>
+            <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.24em] mt-1.5`} style={{ color: palette.deepBrown }}>
               {ceremonyDate}
             </p>
           </div>

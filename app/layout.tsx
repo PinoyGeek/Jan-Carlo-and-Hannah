@@ -4,6 +4,7 @@ import { Great_Vibes, Inter, Imperial_Script, Cinzel } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { siteConfig } from "@/content/site"
+import { ClientLayout } from "@/components/client-layout"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jan-carlo-and-hannah.weddinginvitationrsvp.com/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
@@ -182,7 +183,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} font-inter antialiased text-foreground`}
       >
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
         <Analytics />
       </body>
     </html>

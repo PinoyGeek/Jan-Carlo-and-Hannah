@@ -5,12 +5,7 @@ import { Copy, Check, Navigation, MapPin } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { siteConfig } from "@/content/site"
-import { Cinzel, Cormorant_Garamond } from "next/font/google"
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400"],
-})
+import { Cinzel } from "next/font/google"
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -26,17 +21,6 @@ const palette = {
   champagneGold: "#D6BFA3",   // champagne
   champagneLight: "#F2E4D3",  // light champagne / paper
 } as const
-
-// Wedding guest palette swatches (matches the “attire / thank you” reference style)
-const guestPalette = [
-  "#EBCBBB", // soft beige
-  "#CFAE9D", // warm sand
-  "#BB9D8E", // muted taupe
-  "#AB8875", // mocha taupe
-  "#D9CDC0", // light greige
-  "#D3B195", // warm beige
-  "#E9D1BC", // light champagne
-] as const
 
 export function Details() {
   const [copiedItems, setCopiedItems] = useState<Set<string>>(new Set())
@@ -471,65 +455,18 @@ export function Details() {
           </p>
         </div> */}
 
-        {/* Wedding Guest Palette (similar to reference screenshot) */}
-        <div className="relative mb-10 sm:mb-12 md:mb-16 px-2 sm:px-0">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-[#D6BFA3]/35 bg-[#F2E4D3]/35 backdrop-blur-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)] px-4 sm:px-6 py-8 sm:py-10">
-            <div className="flex items-center justify-center gap-4 mb-3 sm:mb-4">
-              <div className="h-px w-20 sm:w-28 bg-[#D6BFA3]/70" />
-              <p
-                className={`${cinzel.className} text-[0.7rem] sm:text-xs uppercase tracking-[0.22em] text-[#4E3B31]`}
-              >
-                Wedding Guest Palette
-              </p>
-              <div className="h-px w-20 sm:w-28 bg-[#D6BFA3]/70" />
-            </div>
-
-            <div
-              className={`${cormorant.className} text-4xl sm:text-5xl md:text-6xl font-normal italic text-[#4E3B31] text-center`}
-              style={{ textShadow: "0 2px 10px rgba(78,59,49,0.18)" }}
-            >
-              attire
-            </div>
-
-            <p
-              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.22em] text-[#4E3B31] text-center mt-4 mb-6`}
-            >
-              WE KINDLY INVITE OUR GUESTS TO WEAR
-              <br />
-              THESE SOFT NEUTRAL TONES FOR OUR SPECIAL DAY
-            </p>
-
-            <div className="flex justify-center gap-2.5 sm:gap-3 md:gap-4 flex-wrap mb-10 sm:mb-12 px-2">
-              {guestPalette.map((color) => (
-                <div
-                  key={color}
-                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full
-                    shadow-[0_10px_18px_rgba(0,0,0,0.12)]
-                    border border-white/70 ring-2 ring-white/30"
-                  style={{ backgroundColor: color }}
-                  title={color}
-                />
-              ))}
-            </div>
-
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="h-px w-24 sm:w-32 bg-[#D6BFA3]/60" />
-              <div className="w-1.5 h-1.5 rounded-full bg-[#D6BFA3]" />
-              <div className="h-px w-24 sm:w-32 bg-[#D6BFA3]/60" />
-            </div>
-
-            <div
-              className={`${cormorant.className} text-3xl sm:text-4xl md:text-5xl font-normal italic text-[#4E3B31] text-center`}
-              style={{ textShadow: "0 2px 10px rgba(78,59,49,0.16)" }}
-            >
-              thank you
-            </div>
-
-            <p
-              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.22em] text-[#4E3B31] text-center mt-4`}
-            >
-              ROMANTIC NEUTRALS • WARM TAUPES • SOFT CHAMPAGNE TONES
-            </p>
+        {/* Attire Guidelines image — full width on mobile, contained on larger screens */}
+        <div className="relative mb-10 sm:mb-12 md:mb-16 -mx-4 sm:mx-0">
+          <div className="sm:mx-auto sm:max-w-3xl sm:rounded-2xl sm:overflow-hidden sm:shadow-[0_20px_60px_rgba(0,0,0,0.10)]">
+            <Image
+              src="/decoration/Attire Guidelines.png"
+              alt="Attire Guidelines"
+              width={1200}
+              height={1600}
+              className="w-full h-auto block"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 768px"
+              priority={false}
+            />
           </div>
         </div>
 

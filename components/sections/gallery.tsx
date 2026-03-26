@@ -3,11 +3,14 @@
 import { useState, useEffect, useCallback } from "react"
 import NextImage from "next/image"
 import Image from "next/image"
+import Link from "next/link"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 import { Section } from "@/components/section"
 import { motion } from "motion/react"
 import { Cormorant_Garamond, WindSong, Cinzel } from "next/font/google"
 import { siteConfig } from "@/content/site"
+
+const MotionLink = motion(Link)
 // Removed circular gallery in favor of a responsive masonry layout
 
 const cormorant = Cormorant_Garamond({
@@ -455,8 +458,9 @@ export function Gallery() {
       )}
       {/* View more button */}
       <div className="relative z-10 mt-8 sm:mt-10 md:mt-12 flex justify-center px-4">
-        <motion.a
+        <MotionLink
           href="/gallery"
+          onClick={() => sessionStorage.setItem("returnFromGallery", "true")}
           className="group inline-flex items-center gap-2 px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl font-semibold sm:font-bold transition-all duration-300 uppercase tracking-wider text-xs sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
           style={{
             backgroundColor: "#606C60",
@@ -510,7 +514,7 @@ export function Gallery() {
               ease: "easeInOut",
             }}
           />
-        </motion.a>
+        </MotionLink>
       </div>
     </Section>
   )

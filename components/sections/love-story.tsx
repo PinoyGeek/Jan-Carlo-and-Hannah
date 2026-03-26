@@ -41,7 +41,7 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="Love in the Time of Stillness"
+        title="Love in God's Perfect Time"
         imageSrc="/mobile-background/couple-2.webp"
         text={
           <>
