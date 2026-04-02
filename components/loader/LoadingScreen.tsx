@@ -15,7 +15,7 @@ const COUNTDOWN_BOXES = [
   { src: '/frontboxes/boxes-3.webp' },
 ];
 
-const MAIN_BW_IMAGE = '/galleryPage/couple (1).webp';
+const MAIN_BW_IMAGE = '/galleryPage/couple (17).webp';
 const STAGGER_DELAY_MS = 4000; // Each image appears every 4 seconds
 const BOX_TRANSITION_MS = 1200; // Slow, smooth transition
 const TOTAL_DURATION_MS = COUNTDOWN_BOXES.length * STAGGER_DELAY_MS + 3000;
