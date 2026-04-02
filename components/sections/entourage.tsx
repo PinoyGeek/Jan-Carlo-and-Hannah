@@ -214,7 +214,7 @@ export function Entourage() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <h3
-        className={`relative ${cinzel.className} text-[0.7rem] sm:text-[0.85rem] md:text-base lg:text-lg tracking-[0.18em] uppercase mb-1 sm:mb-1.5 md:mb-2 ${textAlign} ${className} transition-all duration-300 whitespace-nowrap`}
+        className={`relative ${cinzel.className} text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.18em] uppercase mb-1 sm:mb-1.5 md:mb-2 ${textAlign} ${className} transition-all duration-300 whitespace-nowrap`}
         style={{ color: palette.deep }}
       >
         {children}
@@ -245,14 +245,14 @@ export function Entourage() {
           style={{ background: `linear-gradient(to right, transparent, ${palette.champagneGold}35, transparent)` }}
         />
         <p
-          className={`relative text-[11px] sm:text-[13px] md:text-sm lg:text-base font-semibold ${textAlign} transition-all duration-300`}
+          className={`relative text-sm sm:text-sm md:text-base lg:text-lg font-semibold ${textAlign} transition-all duration-300`}
           style={{ color: palette.deep }}
         >
           {member.Name}
         </p>
         {showRole && member.RoleTitle && (
           <p
-            className={`relative text-[9px] sm:text-[10px] md:text-[10px] lg:text-xs font-medium mt-0 leading-tight ${textAlign} tracking-wide uppercase transition-colors duration-300 opacity-80`}
+            className={`relative text-[10px] sm:text-xs md:text-xs lg:text-sm font-medium mt-0 leading-tight ${textAlign} tracking-wide uppercase transition-colors duration-300 opacity-80`}
             style={{ color: palette.medium }}
           >
             {member.RoleTitle}
@@ -380,7 +380,7 @@ export function Entourage() {
       {/* Section Header */}
       <div className={`relative z-30 text-center mb-4 sm:mb-5 md:mb-6 px-3 sm:px-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}>
         <p
-          className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] mb-2`}
+          className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] mb-2`}
           style={{ color: palette.softBrown }}
         >
           Those who stand with {siteConfig.couple.groomNickname} &amp; {siteConfig.couple.brideNickname}
@@ -394,7 +394,7 @@ export function Entourage() {
         </h2>
 
         <p
-          className={`${cormorant.className} text-xs sm:text-sm md:text-base mb-2 sm:mb-2.5 md:mb-3 italic opacity-90`}
+          className={`${cormorant.className} text-sm sm:text-base md:text-lg mb-2 sm:mb-2.5 md:mb-3 italic`}
           style={{ color: palette.softBrown }}
         >
           Honoring those who share in our joy

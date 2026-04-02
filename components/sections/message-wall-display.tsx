@@ -141,7 +141,7 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
                     <h4 className={`${cormorant.className} text-xs sm:text-sm md:text-base font-semibold truncate transition-colors duration-300`} style={{ color: MSG_COLOR }}>
                       {msg.name}
                     </h4>
-                    <span className={`${cormorant.className} text-[9px] sm:text-[10px] md:text-xs truncate`} style={{ color: MSG_COLOR, opacity: 0.75 }}>
+                    <span className={`${cormorant.className} text-[10px] sm:text-xs md:text-sm truncate`} style={{ color: MSG_COLOR, opacity: 0.75 }}>
                       {new Date(msg.timestamp).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -165,7 +165,7 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
                 <div className="w-8 sm:w-10 md:w-12 h-0.5 bg-gradient-to-r from-[#9B6A41]/20 to-transparent mt-1" />
               </div>
               
-              <p className={`${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed sm:leading-loose italic transition-colors duration-300 relative z-10`} style={{ color: MSG_COLOR, opacity: 0.9 }}>
+              <p className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed sm:leading-loose italic transition-colors duration-300 relative z-10`} style={{ color: MSG_COLOR }}>
                 {msg.message}
               </p>
               

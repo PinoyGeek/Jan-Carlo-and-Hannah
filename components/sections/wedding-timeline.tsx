@@ -143,7 +143,7 @@ export function WeddingTimeline() {
       {/* Header - white text */}
       <div className="relative z-10 text-center mb-6 sm:mb-9 md:mb-12 px-3 sm:px-4">
         <p
-          className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase mb-2 text-white`}
+          className={`${cormorant.className} text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase mb-2 text-white`}
         >
           Day Schedule
         </p>
@@ -152,7 +152,7 @@ export function WeddingTimeline() {
           Wedding Timeline
         </h2>
 
-        <p className={`${cormorant.className} text-[11px] sm:text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed px-2 text-white/90`}>
+        <p className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl max-w-xl mx-auto leading-relaxed px-2 text-white/90`}>
           A simple overview of the key moments of our day, from arrival to farewell.
         </p>
 
@@ -240,7 +240,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
         <div className="flex items-center gap-1.5">
           <Clock className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} flex-shrink-0`} style={{ color: TIMELINE_TEXT }} />
           <p
-            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] uppercase`}
+            className={`${mobile ? "text-xs" : "text-sm sm:text-base md:text-lg"} font-bold tracking-[0.15em] uppercase`}
             style={{ color: TIMELINE_TEXT }}
           >
             {event.time}
@@ -256,7 +256,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
 
         {event.description && (
           <p
-            className={`${mobile ? "text-[10px] sm:text-xs" : "text-xs sm:text-sm md:text-base"} ${cormorant.className} leading-relaxed opacity-90`}
+            className={`${mobile ? "text-xs sm:text-sm" : "text-sm sm:text-base md:text-lg"} ${cormorant.className} leading-relaxed`}
             style={{ color: TIMELINE_TEXT }}
           >
             {event.description}

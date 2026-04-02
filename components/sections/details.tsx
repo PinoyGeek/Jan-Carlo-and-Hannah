@@ -159,7 +159,7 @@ export function Details() {
           Event Details
         </h2>
         <p
-          className={`${cinzel.className} text-sm sm:text-base md:text-lg text-[#8B6F5A] font-normal max-w-xl mx-auto leading-relaxed tracking-[0.14em] px-4`}
+          className={`${cinzel.className} text-base sm:text-lg md:text-xl text-[#8B6F5A] font-normal max-w-xl mx-auto leading-relaxed tracking-[0.14em] px-4`}
         >
           Everything you need to know about our special day.
         </p>
@@ -257,7 +257,7 @@ export function Details() {
                         {ceremonyVenueDetail}
                       </p>
                     )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#4E3B31]/70 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#4E3B31]/70 leading-relaxed">
                       {ceremonyAddress}
                     </p>
                   </div>
@@ -308,129 +308,7 @@ export function Details() {
         </div>
 
         {/* Reception Card */}
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#D6BFA3]/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
-
-          <div className="relative elegant-card bg-[#F2E4D3] rounded-xl sm:rounded-2xl overflow-hidden border-4 border-[#4E3B31]/25 premium-shadow hover:border-[#4E3B31]/45 transition-all duration-300">
        
-            <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
-              {receptionImages.map((src, index) => (
-                <div
-                  key={src}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    index === currentReceptionImageIndex ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <Image
-                    src="/Details/courtyard.png"
-                    alt={siteConfig.reception.venue}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
-                    priority={index === 0}
-                  />
-                </div>
-              ))}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
-              
-          
-              <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 md:bottom-6 md:left-6 right-3 sm:right-4 md:right-6 z-20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-ephesis)] text-[#FFF7F6] mb-1 sm:mb-2 drop-shadow-lg">
-                  Reception
-                </p>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-normal text-white mb-0.5 sm:mb-1 drop-shadow-lg uppercase tracking-[0.1em] leading-tight">
-                  {siteConfig.reception.location}
-                </h3>
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  {siteConfig.reception.venue}
-                </p>
-              </div>
-            </div>
-
-            <div className="p-3 sm:p-5 md:p-7 lg:p-9">
-         
-              <div className="text-center mb-5 sm:mb-8">
-                {siteConfig.reception.time === "To follow after the ceremony" ? (
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#4E3B31] tracking-wide">
-                    To follow after the ceremony
-                  </p>
-                ) : (
-                  <>
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#8B6F5A] uppercase tracking-[0.2em] mb-2 sm:mb-3">
-                      {siteConfig.reception.time === "After ceremony" ? "Starts" : "Starts at"}
-                    </p>
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#4E3B31] tracking-wide">
-                      {siteConfig.reception.time}
-                    </p>
-                  </>
-                )}
-              </div>
-
-        
-              <div className="bg-gradient-to-br from-[#F2E4D3]/40 to-[#F5EFE6] rounded-xl p-3 sm:p-4 md:p-5 mb-4 sm:mb-6 border-4 border-[#4E3B31]/15">
-                <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
-                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#4E3B31] mt-0.5 flex-shrink-0" />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#4E3B31] mb-1.5 sm:mb-2 uppercase tracking-wide">
-                      Location
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] text-[#4E3B31] leading-relaxed">
-                      {receptionVenueName}
-                    </p>
-                    {receptionVenueDetail && (
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#4E3B31]/70 leading-relaxed mt-1">
-                        {receptionVenueDetail}
-                      </p>
-                    )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#4E3B31]/70 leading-relaxed">
-                      {receptionAddress}
-                    </p>
-                  </div>
-              
-                  <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                  {/* <div className="bg-[#F2E4D3] p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#4E3B31]/20 shadow-sm">
-                      <QRCodeSVG
-                        value={receptionMapsLink}
-                        size={80}
-                        level="M"
-                        includeMargin={false}
-                        fgColor="#4E3B31"
-                        bgColor="#F2E4D3"
-                      />
-                    </div>
-                    <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#4E3B31]/60 italic text-center max-w-[80px]">
-                      Scan for directions
-                    </p> */}
-                  </div>
-                </div>
-              </div>
-
-     
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4">
-                <button
-                  onClick={() => openInMaps(receptionMapsLink)}
-                  className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 md:py-3 bg-[#4E3B31] hover:bg-[#3b2c24] text-[#F5EFE6] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] premium-shadow"
-                  aria-label="Get directions to reception venue"
-                >
-                  <Navigation className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0" />
-                  <span>Get Directions</span>
-                </button>
-                <button
-                  onClick={() => copyToClipboard(receptionVenue, 'reception')}
-                  className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 md:py-3 bg-[#F5EFE6] border-2 border-[#4E3B31]/30 hover:border-[#4E3B31]/50 hover:bg-[#D6BFA3]/20 text-[#4E3B31] rounded-lg font-[family-name:var(--font-crimson)] font-semibold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-                  aria-label="Copy reception venue address"
-                >
-                  {copiedItems.has('reception') ? (
-                    <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0 text-[#4E3B31]" />
-                  ) : (
-                    <Copy className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0" />
-                  )}
-                  <span>{copiedItems.has('reception') ? 'Copied!' : 'Copy Address'}</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Attire Information */}
@@ -459,7 +337,7 @@ export function Details() {
         <div className="relative mb-10 sm:mb-12 md:mb-16 -mx-4 sm:mx-0">
           <div className="sm:mx-auto sm:max-w-3xl sm:rounded-2xl sm:overflow-hidden sm:shadow-[0_20px_60px_rgba(0,0,0,0.10)]">
             <Image
-              src="/decoration/Attire Guidelines.png"
+              src="/Details/2d97d6b9-2c49-46f8-8710-d56e44c71116 (1).png"
               alt="Attire Guidelines"
               width={1200}
               height={1600}

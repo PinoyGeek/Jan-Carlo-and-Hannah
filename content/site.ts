@@ -8,7 +8,7 @@ export const siteConfig = {
   wedding: {
     date: "May 2, 2026",
     time: "3:30 PM",
-    venue: "Delle Sorelle Taytay Rizal (Fountain Area) ; East Riviera Subdivision 1920 Taytay Calabarzon",
+    venue: "Delle Sorelle Taytay Rizal; East Riviera Subdivision 1920 Taytay Calabarzon",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#F5D8B0, #F5F5DC, #E6D5B8, #D2B48C",
@@ -21,7 +21,7 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Delle Sorelle Taytay Rizal (Fountain Area) ",
+    location: "Delle Sorelle Taytay Rizal",
     venue: "East Riviera Subdivision 1920 Taytay Calabarzon",
     date: "May 2, 2026",
     day: "Saturday",

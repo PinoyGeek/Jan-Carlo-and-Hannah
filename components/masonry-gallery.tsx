@@ -6,6 +6,8 @@ import Image from "next/image"
 type ImageItem = {
   src: string
   category: "desktop" | "mobile" | "front" | "gallery"
+  width?: number
+  height?: number
 }
 
 export default function MasonryGallery({ images }: { images: ImageItem[] }) {
@@ -61,16 +63,24 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
             aria-label="Open image"
           >
             <div className="relative w-full overflow-hidden rounded-xl border border-[#606C60]/40 bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#606C60]/60">
-              {!loaded[img.src] && (
-                <div className="aspect-[4/5] sm:aspect-[4/5] w-full animate-pulse bg-gradient-to-br from-[#606C60]/30 via-[#E1D5C7]/25 to-[#606C60]/30" />
-              )}
-              <div className="relative aspect-[4/5] sm:aspect-[4/5] w-full">
+              {/* Padding-bottom trick: uses real aspect ratio so portrait/landscape render correctly */}
+              <div
+                className="relative w-full"
+                style={{
+                  paddingBottom: img.width && img.height
+                    ? `${(img.height / img.width) * 100}%`
+                    : "125%",
+                }}
+              >
+                {!loaded[img.src] && (
+                  <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-[#606C60]/30 via-[#E1D5C7]/25 to-[#606C60]/30" />
+                )}
                 <Image
                   src={img.src}
                   alt=""
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  className={`rounded-xl transition-transform duration-300 group-hover:scale-[1.02] object-cover object-top ${
+                  className={`rounded-xl transition-transform duration-300 group-hover:scale-[1.02] object-cover object-center ${
                     loaded[img.src] ? "opacity-100" : "opacity-0"
                   }`}
                   quality={90}
@@ -99,19 +109,15 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
             >
               ‹
             </button>
-            <div className="relative max-h-[80vh] w-auto">
+            <div className="relative max-h-[80vh] w-auto flex items-center justify-center">
               <Image
                 src={filtered[lightboxIdx].src}
                 alt=""
-                width={1200}
-                height={1600}
-                className="max-h-[80vh] w-auto rounded-xl shadow-2xl border border-[#606C60]/30 object-contain"
+                width={filtered[lightboxIdx].width ?? 1200}
+                height={filtered[lightboxIdx].height ?? 1600}
+                className="max-h-[80vh] max-w-[90vw] w-auto rounded-xl shadow-2xl border border-[#606C60]/30 object-contain"
                 quality={95}
                 priority={true}
-                style={{
-                  imageRendering: 'high-quality',
-                  WebkitImageRendering: 'high-quality',
-                }}
               />
             </div>
             <button

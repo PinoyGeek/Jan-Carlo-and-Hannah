@@ -218,7 +218,7 @@ export function SnapShare() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div
-            className={`${cormorant.className} inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] sm:text-xs uppercase`}
+            className={`${cormorant.className} inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs sm:text-sm uppercase`}
             style={{ letterSpacing: "0.3em", borderColor: "#D6BFA3", backgroundColor: "#F2E4D3", color: "#8B6F5A" }}
           >
             Share your memories
@@ -235,7 +235,7 @@ export function SnapShare() {
             Capture & Share the Celebration
           </h2>
           <p
-            className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#F5EFE6] max-w-2xl mx-auto mt-2 sm:mt-4 leading-relaxed px-2`}
+            className={`${cormorant.className} text-sm sm:text-base md:text-lg text-[#F5EFE6] max-w-2xl mx-auto mt-2 sm:mt-4 leading-relaxed px-2`}
           >
             Help us remember the little moments of {groomNickname} & {brideNickname}&apos;s day—every smile, embrace, and candid laugh. Your photos and clips complete our love story.
           </p>
@@ -281,7 +281,7 @@ export function SnapShare() {
                   </motion.div>
                 </div>
                 <p
-                  className={`${cormorant.className} text-[#8B6F5A] text-xs sm:text-sm text-center mt-3 sm:mt-5 px-1.5 leading-relaxed`}
+                  className={`${cormorant.className} text-[#8B6F5A] text-sm sm:text-base text-center mt-3 sm:mt-5 px-1.5 leading-relaxed`}
                 >
                   Share your snapshots to be featured in our keepsake gallery.
                 </p>
@@ -491,7 +491,7 @@ export function SnapShare() {
                     Upload Your Photos & Videos
                   </div>
                   <p
-                    className={`${cormorant.className} text-[#8B6F5A] text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 px-1`}
+                    className={`${cormorant.className} text-[#8B6F5A] text-sm sm:text-base leading-relaxed mb-3 sm:mb-4 px-1`}
                   >
                     Help us capture our special day! Scan the QR or use the actions below to drop your clips into our shared Drive.
                   </p>

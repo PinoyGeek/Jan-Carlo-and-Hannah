@@ -50,7 +50,7 @@ export function Registry() {
           Gift Guide
         </h2>
         
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#ffffff] font-light max-w-2xl mx-auto leading-relaxed px-2">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#ffffff] font-light max-w-2xl mx-auto leading-relaxed px-2">
         With hearts full of gratitude, we ask only for your presence and prayers as we celebrate together. Should you wish to bless us further, a gift toward our future would be a blessing we will always treasure. 
 
         </p>
@@ -98,10 +98,10 @@ export function Registry() {
             />
           </div>
             <div className="mt-3 sm:mt-4 w-full max-w-md text-center">
-              <p className="text-[11px] sm:text-xs tracking-[0.18em] uppercase text-[#ffffff]/70">
+              <p className="text-xs sm:text-sm tracking-[0.18em] uppercase text-[#ffffff]/70">
                 Account Number
               </p>
-              <p className={`${cinzel.className} mt-1 text-sm sm:text-base text-[#ffffff] drop-shadow-sm`}>
+              <p className={`${cinzel.className} mt-1 text-base sm:text-lg text-[#ffffff] drop-shadow-sm`}>
                 {activeItem.accountNumber}
               </p>
             </div>

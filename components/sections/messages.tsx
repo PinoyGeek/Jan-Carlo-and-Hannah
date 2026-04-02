@@ -148,7 +148,7 @@ function MessageForm({ onSuccess, onMessageSent }: MessageFormProps) {
             <h3 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-bold mb-1.5 sm:mb-2`} style={{ color: MSG_COLOR }}>
               Share Your Love
             </h3>
-            <p className={`${cormorant.className} text-[10px] sm:text-xs md:text-sm`} style={{ color: MSG_COLOR, opacity: 0.85 }}>
+            <p className={`${cormorant.className} text-xs sm:text-sm md:text-base`} style={{ color: MSG_COLOR }}>
               Your words will be part of {coupleDisplayName}&apos;s keepsake for years to come.
             </p>
           </div>
@@ -340,14 +340,14 @@ export function Messages() {
         {/* Header Section */}
         <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
           <div className="space-y-2 sm:space-y-2.5">
-            <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-white`}>
+            <p className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] text-white`}>
               Messages for {coupleDisplayName}
             </p>
             <h2 className={`${cinzel.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white`}>
               Love notes &amp; prayers
             </h2>
           </div>
-          <p className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 mt-2 text-white`}>
+          <p className={`${cormorant.className} text-sm sm:text-base md:text-lg font-light max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 mt-2 text-white`}>
             Leave a short note for {coupleDisplayName}. Every wish and prayer becomes part of their forever story.
           </p>
         </div>
@@ -382,7 +382,7 @@ export function Messages() {
             <h3 className={`${cinzel.className} text-lg sm:text-xl md:text-2xl font-bold mb-1.5 sm:mb-2 md:mb-3 text-white`}>
               Messages from Loved Ones
             </h3>
-            <p className={`${cormorant.className} text-xs sm:text-sm md:text-base max-w-2xl mx-auto px-2 sm:px-4 text-white`}>
+            <p className={`${cormorant.className} text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-2 sm:px-4 text-white`}>
               Read the beautiful messages shared by family and friends
             </p>
           </div>

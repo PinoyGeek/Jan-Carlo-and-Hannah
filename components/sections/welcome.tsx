@@ -34,7 +34,6 @@ const palette = {
   champagneLight: "#F2E4D3",
 } as const
 
-const WELCOME_TEXT = "#9B6A41"
 // Corner decoration - white
 const DECO_FILTER = "brightness(0) invert(1)"
 
@@ -102,90 +101,56 @@ export function Welcome() {
           </div>
 
           <div className="relative text-center space-y-4 sm:space-y-6 md:space-y-7 lg:space-y-8">
-          {/* Main heading */}
-          <div className="space-y-1 sm:space-y-1.5 md:space-y-2.5">
-            <p
-              className={`${cormorant.className} text-[0.65rem] sm:text-[0.7rem] md:text-xs lg:text-sm uppercase tracking-[0.24em] sm:tracking-[0.28em]`}
-              style={{ color: palette.deepBrown }}
-            >
-              {groomName} &amp; {brideName}
-            </p>
-            <h2
-              className={`${cinzel.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.9rem]`}
-              style={{ color: palette.deepBrown }}
-            >
-              Welcome to our wedding website
-            </h2>
-
-            {/* bible verses */}
-            <div className="space-y-0.5 sm:space-y-1">
+            {/* Main heading */}
+            <div className="space-y-1 sm:space-y-1.5 md:space-y-2.5">
               <p
-                className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
-                style={{ color: palette.deepBrown, opacity: 0.9 }}
+                className={`${cormorant.className} text-xs sm:text-sm md:text-sm lg:text-base uppercase tracking-[0.24em] sm:tracking-[0.28em]`}
+                style={{ color: palette.mediumBrown }}
               >
-                "God's perfect timing makes even the simplest love story a beautiful testimony of His grace."
+                {groomName} &amp; {brideName}
               </p>
-              
+              <h2
+                className={`${cinzel.className} text-2xl sm:text-3xl md:text-[2.6rem] lg:text-5xl xl:text-[3.2rem]`}
+                style={{ color: palette.deepBrown }}
+              >
+                Welcome to our wedding website
+              </h2>
+
+              {/* Bible verse */}
+              <div className="space-y-0.5 sm:space-y-1">
+                <p
+                  className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl italic leading-relaxed`}
+                  style={{ color: palette.sageGold }}
+                >
+                  &ldquo;God&apos;s perfect timing makes even the simplest love story a beautiful testimony of His grace.&rdquo;
+                </p>
+              </div>
+
+              {/* Body paragraphs */}
+              <div className="space-y-2 sm:space-y-3 pt-1">
+                <p
+                  className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed`}
+                  style={{ color: palette.deepBrown }}
+                >
+                  By God&apos;s grace, our two paths became one, and our hearts found a home in each other. With grateful hearts, we are so happy to share this beautiful season of our lives with you.
+                </p>
+                <p
+                  className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed`}
+                  style={{ color: palette.deepBrown }}
+                >
+                  Having you here means so much to us. Your presence in our lives is a gift, and it makes our joy even more meaningful to celebrate this day with the people we love most.
+                </p>
+                <p
+                  className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed`}
+                  style={{ color: palette.deepBrown }}
+                >
+                  We created this space to share the details of our wedding day and the moments leading up to it. Thank you for being part of our story and for celebrating the beginning of our forever.
+                </p>
+              </div>
             </div>
-            
-
-
-            {/* Verse */}
-            <div className="space-y-0.5 sm:space-y-1">
-              <p
-                className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
-                style={{ color: palette.deepBrown, opacity: 0.9 }}
-              >
-                By God’s grace, our two paths became one, and our hearts found a home in each other. With grateful hearts, we are so happy to share this beautiful season of our lives with you
-              </p>
-              <p
-                className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
-                style={{ color: palette.deepBrown, opacity: 0.9 }}
-              >
-Having you here means so much to us. Your presence in our lives is a gift, and it makes our joy even more meaningful to celebrate this day with the people we love most.
-              </p >
-              <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
-                style={{ color: palette.deepBrown, opacity: 0.9 }}
-              >
-We created this space to share the details of our wedding day and the moments leading up to it. Thank you for being part of our story and for celebrating the beginning of our forever.
-              </p>
-            </div>
-
-            {/* Divider */}
-            {/* <div className="flex items-center justify-center gap-2 pt-1">
-              <span className="h-px w-10 sm:w-16 md:w-20 bg-[#9B6A41]/40" />
-              <span className="w-1.5 h-1.5 rounded-full bg-[#9B6A41]" />
-              <span className="h-px w-10 sm:w-16 md:w-20 bg-[#9B6A41]/40" />
-            </div> */}
-          </div>
-
-          {/* Body text */}
-          {/* <div
-            className={`${cormorant.className} text-[0.75rem] sm:text-[0.85rem] md:text-sm lg:text-base leading-relaxed sm:leading-6 md:leading-7 space-y-2.5 sm:space-y-3 md:space-y-4`}
-            style={{ color: palette.deepBrown }}
-          >
-            <p>
-              We&apos;ve found a love that&apos;s a true blessing, and we give thanks to God for writing the
-              beautiful story of our journey together. With hearts full of gratitude, we&apos;re excited to share
-              this blessing with you! Thank you for your love, prayers, and support. We can&apos;t wait to celebrate
-              this joyful day together!
-            </p>
-            <p>
-              Feel free to browse through important information and other helpful reminders — everything you
-              need to join us in this celebration!
-            </p>
-
-            <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base italic leading-relaxed`}
-              style={{ color: palette.deepBrown, opacity: 0.9 }}
-            >
-              God’s perfect timing makes even the simplest love story a beautiful testimony of His grace.
-            </p>
-          </div> */}
           </div>
         </div>
       </div>
     </Section>
   )
 }
-
-

@@ -194,18 +194,20 @@ export function Gallery() {
       <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12 px-4">
         <div className="space-y-2 sm:space-y-3">
           <p
-            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] ${palette.softBrown}`}
+            className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em]`}
+            style={{ color: palette.softBrown }}
           >
             Cherished Moments with {coupleDisplayName}
           </p>
           <h2
-            className={`${cinzel.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl ${palette.deepBrown}`}
+            className={`${cinzel.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl`}
+            style={{ color: palette.deepBrown }}
           >
             Our Love Story in Pictures
           </h2>
         </div>
 
-        <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#606C60] font-light max-w-xl mx-auto leading-relaxed mt-3`}>
+        <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-[#606C60] font-light max-w-xl mx-auto leading-relaxed mt-3`}>
           Beautiful frames capturing the journey of {coupleDisplayName} — each photograph a precious memory of laughter, love, and the moments that led us to forever.
         </p>
 

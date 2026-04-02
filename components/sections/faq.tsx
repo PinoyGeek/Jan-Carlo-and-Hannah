@@ -169,9 +169,7 @@ Our professional photographers will be capturing every beautiful memory, and we 
   },
   {
     question: `WHAT SHOULD I DO IF I CAN’T MAKE IT?`,
-    answer: `Your presence will truly be missed, but we completely understand. Please kindly let us know through RSVP as soon as possible so we may adjust arrangements accordingly. \n\n
-- I said "NO" to the RSVP but I had a change of plans-I can attend now! What should I do?  \n
-Please check with us first as we have a strict guest list. If seats become available, we will let you know as soon as possible. Please do not attend unannounced, as we may not have any available seats for you. 
+    answer: `Your presence will truly be missed, but we completely understand. Please kindly let us know through RSVP as soon as possible so we may adjust arrangements accordingly. \n
 `,
   },
 
@@ -230,13 +228,13 @@ export function FAQ() {
 
       {/* Section Header */}
       <div className="relative z-30 text-center mb-6 sm:mb-9 md:mb-12 px-3 sm:px-4">
-        <p className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] mb-2`} style={{ color: palette.softBrown }}>
+        <p className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] mb-2`} style={{ color: palette.softBrown }}>
           Answers for our celebration day
         </p>
         <h2 className={`${cinzel.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-1.5 sm:mb-3 md:mb-4`} style={{ color: palette.deep, textShadow: "0 2px 10px rgba(78,59,49,0.22)" }}>
           Frequently Asked Questions
         </h2>
-        <p className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`} style={{ color: palette.softBrown }}>
+        <p className={`${cormorant.className} text-sm sm:text-base md:text-lg font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`} style={{ color: palette.softBrown }}>
           Helpful notes so you can simply arrive, celebrate, and enjoy this new chapter with us.
         </p>
         <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">

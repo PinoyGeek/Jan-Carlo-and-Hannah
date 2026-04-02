@@ -182,7 +182,7 @@ export function Hero() {
           {/* Venue & occasion */}
           <div className="mt-8 sm:mt-10 space-y-2 sm:space-y-2.5" style={{ color: palette.deepBrown }}>
             <p className={`${cinzel.className} text-sm sm:text-base uppercase tracking-[0.18em] leading-relaxed max-w-sm mx-auto`}>
-              {ceremonyVenue}
+              {siteConfig.ceremony.location}
             </p>
             <p className={`${cinzel.className} text-xs sm:text-sm uppercase tracking-[0.22em]`}>
               Ceremony &amp; Reception

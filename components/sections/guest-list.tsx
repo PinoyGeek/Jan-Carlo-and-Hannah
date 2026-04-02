@@ -405,7 +405,7 @@ export function GuestList() {
       <div className="relative z-10 text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-2 sm:px-3 md:px-4">
         {/* Small label */}
         <p
-          className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-white mb-2`}
+          className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] text-white mb-2`}
           style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
         >
           CONFIRM YOUR ATTENDANCE (RSVP)
@@ -418,7 +418,7 @@ export function GuestList() {
           RSVP
         </h2>
         
-        <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}>
+        <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}>
           Please search for your name below to confirm your presence at our special day
         </p>
         <p className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}>
