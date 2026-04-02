@@ -40,14 +40,12 @@ const palette = {
 const galleryHashtag = siteConfig.snapShare.hashtag
 
 const galleryItems = [
-  { image: "/mobile-background/couple-1.webp", text: " " },
-  { image: "/mobile-background/couple-2.webp", text: " " },
-  { image: "/mobile-background/couple-3.webp", text: " " },
-  { image: "/mobile-background/couple-4.webp", text: " " },
-  { image: "/mobile-background/couple-5.webp", text: " " },
-  { image: "/mobile-background/couple-6.webp", text: " " },
-  { image: "/mobile-background/couple-7.webp", text: " " },
-  { image: "/mobile-background/couple-8.webp", text: " " },
+  { image: "/mobile-background/couple (1).webp", text: " " },
+  { image: "/mobile-background/couple (2).webp", text: " " },
+  { image: "/mobile-background/couple (3).webp", text: " " },
+  { image: "/mobile-background/couple (4).webp", text: " " },
+  { image: "/mobile-background/couple (5).webp", text: " " },
+  { image: "/mobile-background/couple (6).webp", text: " " },
 ]
 
 export function Gallery() {
@@ -257,13 +255,13 @@ export function Gallery() {
                     {/* Subtle glow on hover */}
                     <div className="absolute -inset-0.5 bg-gradient-to-br from-[#606C60]/45 via-[#606C60]/28 to-[#E1D5C7]/20 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
                     
-                    <div className="relative aspect-[3/4] md:aspect-square overflow-hidden">
+                    <div className="relative aspect-[3/4] overflow-hidden">
                       <NextImage
                         src={item.image}
                         alt={item.text || `Gallery image ${index + 1}`}
                         fill
                         sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                         quality={90}
                         loading="lazy"
                       />

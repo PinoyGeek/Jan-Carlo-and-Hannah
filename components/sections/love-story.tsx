@@ -42,17 +42,16 @@ export function LoveStory() {
         layout="image-left"
         isFirst={true}
         title="Love in God's Perfect Time"
-        imageSrc="/mobile-background/couple-2.webp"
+        imageSrc="/galleryPage/couple (11).webp"
         text={
           <>
             <p className="mb-4">
-            In July 2018, a simple message became the quiet beginning of a story only God could write. What started as a casual conversation slowly grew into something more meaningful when Carlo and Hannah soon realized that their paths have been crossing long before they knew.the other hand, smiles when she thinks back to her first impression of Carlo, there was simply something about him that quietly stood out and lingered in her heart.
+            In July 2018, a simple message became the quiet beginning of a story only God could write. What started as a casual conversation slowly grew into something more meaningful when Carlo and Hannah soon realized that their paths have been crossing long before they knew.  From the beginning, Carlo noticed Hannah's quiet kindness and hardworking spirit. She was always busy, always focused, and always caring toward those around her. Hannah, on the other hand, smiles when she thinks back to her first impression of Carlo, there was simply something about him that quietly stood out and lingered in her heart.
 <br />
 <br />
-What began as a simple connection soon grew into friendship, and eventually, into love. It was never built on grand gestures, but on the little things, corny jokes, shared music, long conversations, and quiet moments together. In those ordinary days, they found something rare: a love that felt easy, steady, and real. 
+What began as a simple connection soon grew into friendship, and eventually, into love. It was never built on grand gestures, but on the little things, corny jokes, shared music, long conversations, and quiet moments together. In those ordinary days, they found something rare: a love that felt easy, steady, and real.
 <br />
 <br />
-
             </p>
            
           </>
@@ -63,7 +62,7 @@ What began as a simple connection soon grew into friendship, and eventually, int
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/couple-3.webp"
+        imageSrc="/galleryPage/couple (8).webp"
         text={
           <>
             <p>
@@ -78,7 +77,7 @@ What began as a simple connection soon grew into friendship, and eventually, int
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/mobile-background/couple-4.webp"
+        imageSrc="/galleryPage/couple (18).webp"
         text={
           <>
             <p>
