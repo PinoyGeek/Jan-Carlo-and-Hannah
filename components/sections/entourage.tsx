@@ -76,8 +76,8 @@ function mapStaticSponsors(): PrincipalSponsor[] {
 }
 
 const ROLE_CATEGORY_ORDER = [
-  "OFFICIATING MINISTER",
   "The Couple",
+  "Wedding Officiant",
   "Parents of the Groom",
   "Parents of the Bride",
   "Family of the Groom",
