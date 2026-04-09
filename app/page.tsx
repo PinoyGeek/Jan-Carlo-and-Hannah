@@ -102,7 +102,7 @@ export default function Home() {
               {/* <BookOfGuests /> */}
               <Registry />
               <SnapShare />
-              <Messages />
+              {/* <Messages /> */}
               <Footer />
             </div>
           </div>
